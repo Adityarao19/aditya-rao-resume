@@ -19,6 +19,7 @@ import {
   Zap
 } from "lucide-react";
 import adityaAvatar from "@/assets/aditya-avatar.jpg";
+import ThemeToggle from "./ThemeToggle";
 
 const Resume = () => {
   const skills = {
@@ -77,6 +78,11 @@ const Resume = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Theme Toggle - Fixed Position */}
+      <div className="fixed top-6 right-6 z-50">
+        <ThemeToggle />
+      </div>
+      
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-hero">
         <div className="absolute inset-0 bg-tech-dark/80"></div>
