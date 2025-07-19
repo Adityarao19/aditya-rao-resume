@@ -18,7 +18,6 @@ import {
   Rocket,
   Zap
 } from "lucide-react";
-import adityaAvatar from "@/assets/aditya-avatar.jpg";
 import ThemeToggle from "./ThemeToggle";
 
 const Resume = () => {
@@ -91,7 +90,7 @@ const Resume = () => {
             <div className="lg:col-span-2 animate-fade-in">
               <div className="flex items-center gap-4 mb-4 print:mb-2">
                 <img 
-                  src={adityaAvatar} 
+                  src="/lovable-uploads/343df987-4bce-4453-96a6-45bea4e4a186.png" 
                   alt="Aditya Rao" 
                   className="w-20 h-20 rounded-full shadow-glow border-2 border-cyber-cyan print:w-16 print:h-16 print-keep-colors"
                 />
