@@ -316,9 +316,16 @@ const Resume = () => {
                     Get In Touch
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-tech-dark">
-                  <ExternalLink className="w-5 h-5 mr-2" />
-                  View Portfolio
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-tech-dark"
+                  asChild
+                >
+                  <a href="https://adityaraoportfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    View Portfolio
+                  </a>
                 </Button>
               </div>
             </div>
