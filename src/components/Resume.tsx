@@ -112,13 +112,14 @@ const Resume = () => {
                 <Button 
                   className="bg-primary hover:bg-primary/90 shadow-tech"
                   asChild
+                  aria-label="Send email to Aditya Rao"
                 >
                   <a href="mailto:adityarao1885@gmail.com">
                     <Mail className="w-4 h-4 mr-2" />
                     Hire Me
                   </a>
                 </Button>
-                <Button variant="outline" className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-tech-dark">
+                <Button variant="outline" className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-tech-dark" aria-label="Contact for collaboration">
                   <Rocket className="w-4 h-4 mr-2" />
                   Let&apos;s Collaborate
                 </Button>
@@ -126,6 +127,7 @@ const Resume = () => {
                   variant="secondary" 
                   className="bg-tech-gray hover:bg-tech-gray/80"
                   onClick={() => window.print()}
+                  aria-label="Download resume as PDF"
                 >
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
