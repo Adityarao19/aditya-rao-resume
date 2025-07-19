@@ -84,7 +84,7 @@ const Resume = () => {
       </div>
       
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-hero print-no-gradient">
+      <div className="relative overflow-hidden bg-gradient-hero print-keep-gradient print-keep-colors">
         <div className="absolute inset-0 bg-tech-dark/80 print-hidden"></div>
         <div className="relative max-w-6xl mx-auto px-6 py-12 print-compact">
           <div className="grid lg:grid-cols-3 gap-8 items-start print:grid-cols-1">
@@ -93,17 +93,17 @@ const Resume = () => {
                 <img 
                   src={adityaAvatar} 
                   alt="Aditya Rao" 
-                  className="w-20 h-20 rounded-full shadow-glow border-2 border-cyber-cyan print:w-16 print:h-16 print-no-shadow"
+                  className="w-20 h-20 rounded-full shadow-glow border-2 border-cyber-cyan print:w-16 print:h-16 print-keep-colors"
                 />
                 <div>
                   <h1 className="text-4xl font-bold text-foreground mb-1 print:text-2xl">
                     Aditya Rao
                   </h1>
-                  <p className="text-lg text-cyber-cyan print:text-base print:text-black">Freelance Developer</p>
+                  <p className="text-lg text-cyber-cyan print:text-base print-keep-colors">Freelance Developer</p>
                 </div>
               </div>
               
-              <p className="text-base text-muted-foreground mb-6 leading-relaxed print:text-sm print:mb-3 print:text-black">
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed print:text-sm print:mb-3 print-keep-colors">
                 Creative and performance-oriented freelance developer with expertise in building 
                 custom full stack web apps, dashboards, and secure backend systems. Currently 
                 learning Flutter and React Native to expand into app development.

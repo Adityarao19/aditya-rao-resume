@@ -132,10 +132,10 @@ All colors MUST be HSL.
   }
 }
 
-/* Print styles for single-page resume */
+/* Print styles for creative single-page resume */
 @media print {
   @page {
-    margin: 0.5in;
+    margin: 0.3in;
     size: A4;
   }
   
@@ -156,12 +156,28 @@ All colors MUST be HSL.
     font-size: 0.875rem !important;
   }
   
-  .print-no-shadow {
-    box-shadow: none !important;
+  /* Keep all creative styling for print */
+  .print-keep-gradient {
+    background: linear-gradient(135deg, hsl(210, 100%, 45%), hsl(188, 100%, 50%)) !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
   
-  .print-no-gradient {
-    background: white !important;
-    color: black !important;
+  .print-keep-colors {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .print-tech-shadow {
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3) !important;
+  }
+  
+  /* Ensure dark backgrounds print correctly */
+  .print-dark-bg {
+    background: hsl(240, 10%, 3.9%) !important;
+    color: hsl(0, 0%, 98%) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }
