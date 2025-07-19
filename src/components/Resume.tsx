@@ -306,9 +306,15 @@ const Resume = () => {
                 "Always shipping. Always building. Always leveling up."
               </p>
               <div className="flex justify-center gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-tech animate-glow-pulse">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get In Touch
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90 shadow-tech animate-glow-pulse"
+                  asChild
+                >
+                  <a href="mailto:adityarao1885@gmail.com">
+                    <Mail className="w-5 h-5 mr-2" />
+                    Get In Touch
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-tech-dark">
                   <ExternalLink className="w-5 h-5 mr-2" />
