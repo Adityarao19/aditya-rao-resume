@@ -131,3 +131,37 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Print styles for single-page resume */
+@media print {
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+  
+  .print-hidden {
+    display: none !important;
+  }
+  
+  .print-compact {
+    margin: 0 !important;
+    padding: 0.5rem !important;
+  }
+  
+  .print-section {
+    margin-bottom: 1rem !important;
+  }
+  
+  .print-text-sm {
+    font-size: 0.875rem !important;
+  }
+  
+  .print-no-shadow {
+    box-shadow: none !important;
+  }
+  
+  .print-no-gradient {
+    background: white !important;
+    color: black !important;
+  }
+}

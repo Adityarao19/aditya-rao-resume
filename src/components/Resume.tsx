@@ -79,45 +79,49 @@ const Resume = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Theme Toggle - Fixed Position */}
-      <div className="fixed top-6 right-6 z-50">
+      <div className="fixed top-6 right-6 z-50 print-hidden">
         <ThemeToggle />
       </div>
       
       {/* Hero Section */}
-      <div className="relative overflow-hidden bg-gradient-hero">
-        <div className="absolute inset-0 bg-tech-dark/80"></div>
-        <div className="relative max-w-6xl mx-auto px-6 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <div className="flex items-center gap-4 mb-6">
+      <div className="relative overflow-hidden bg-gradient-hero print-no-gradient">
+        <div className="absolute inset-0 bg-tech-dark/80 print-hidden"></div>
+        <div className="relative max-w-6xl mx-auto px-6 py-12 print-compact">
+          <div className="grid lg:grid-cols-3 gap-8 items-start print:grid-cols-1">
+            <div className="lg:col-span-2 animate-fade-in">
+              <div className="flex items-center gap-4 mb-4 print:mb-2">
                 <img 
                   src={adityaAvatar} 
                   alt="Aditya Rao" 
-                  className="w-24 h-24 rounded-full shadow-glow border-2 border-cyber-cyan"
+                  className="w-20 h-20 rounded-full shadow-glow border-2 border-cyber-cyan print:w-16 print:h-16 print-no-shadow"
                 />
                 <div>
-                  <h1 className="text-5xl font-bold text-foreground mb-2">
+                  <h1 className="text-4xl font-bold text-foreground mb-1 print:text-2xl">
                     Aditya Rao
                   </h1>
-                  <p className="text-xl text-cyber-cyan">Freelance Developer</p>
+                  <p className="text-lg text-cyber-cyan print:text-base print:text-black">Freelance Developer</p>
                 </div>
               </div>
               
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed print:text-sm print:mb-3 print:text-black">
                 Creative and performance-oriented freelance developer with expertise in building 
-                custom full stack web apps, dashboards, and secure backend systems. Adept in React, 
-                Flask, TypeScript, and Tailwind. Currently learning Flutter and React Native to 
-                expand into app development.
+                custom full stack web apps, dashboards, and secure backend systems. Currently 
+                learning Flutter and React Native to expand into app development.
               </p>
 
-              <div className="flex flex-wrap gap-4 mb-8">
-                <Button className="bg-primary hover:bg-primary/90 shadow-tech">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Hire Me
+              <div className="flex flex-wrap gap-3 mb-6 print-hidden">
+                <Button 
+                  className="bg-primary hover:bg-primary/90 shadow-tech"
+                  asChild
+                >
+                  <a href="mailto:adityarao1885@gmail.com">
+                    <Mail className="w-4 h-4 mr-2" />
+                    Hire Me
+                  </a>
                 </Button>
                 <Button variant="outline" className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-tech-dark">
                   <Rocket className="w-4 h-4 mr-2" />
-                  Let's Collaborate
+                  Let&apos;s Collaborate
                 </Button>
                 <Button 
                   variant="secondary" 
@@ -129,191 +133,152 @@ const Resume = () => {
                 </Button>
               </div>
 
-              <div className="flex items-center gap-6">
+              <div className="flex items-center gap-4 text-sm print:text-xs">
                 <a 
                   href="mailto:adityarao1885@gmail.com" 
-                  className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors print:text-black"
                 >
-                  <Mail className="w-4 h-4" />
+                  <Mail className="w-3 h-3" />
                   adityarao1885@gmail.com
                 </a>
                 <a 
                   href="https://github.com/Adityarao19" 
-                  className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors print:text-black"
                 >
-                  <Github className="w-4 h-4" />
+                  <Github className="w-3 h-3" />
                   GitHub
                 </a>
                 <a 
                   href="https://t.me/AdityaRao" 
-                  className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors print:text-black"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <MessageCircle className="w-3 h-3" />
                   Telegram
                 </a>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 animate-slide-in">
-              {expertiseAreas.map((area, index) => (
-                <Card key={index} className="bg-card/50 border-tech-gray hover:border-cyber-cyan transition-colors">
-                  <CardContent className="p-6 text-center">
-                    <area.icon className="w-8 h-8 text-cyber-cyan mx-auto mb-3" />
-                    <p className="text-sm font-medium">{area.title}</p>
-                  </CardContent>
-                </Card>
-              ))}
+            {/* Education & Contact - Compact */}
+            <div className="space-y-4 print:space-y-2">
+              <div>
+                <h3 className="text-lg font-bold text-cyber-cyan mb-2 print:text-base print:text-black">Education</h3>
+                <div className="text-sm print:text-xs">
+                  <p className="font-semibold">B.Tech CSE (AI & ML)</p>
+                  <p className="text-muted-foreground print:text-black">Noida International University (2023–2027)</p>
+                </div>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-cyber-cyan mb-2 print:text-base print:text-black">Location</h3>
+                <div className="flex items-center gap-2 text-sm print:text-xs">
+                  <MapPin className="w-3 h-3" />
+                  <span>India</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+      {/* Main Content - Compact Layout */}
+      <div className="max-w-6xl mx-auto px-6 py-8 space-y-8 print-compact print:space-y-4">
         
-        {/* Contact Info */}
-        <Card className="bg-gradient-dark border-tech-gray">
-          <CardContent className="p-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="text-xl font-bold text-cyber-cyan mb-4">Contact Information</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3">
-                    <Mail className="w-4 h-4 text-cyber-cyan" />
-                    <span>adityarao1885@gmail.com</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <ExternalLink className="w-4 h-4 text-cyber-cyan" />
-                    <a href="https://adityaraoportfolio.vercel.app" className="text-primary hover:underline">
-                      Portfolio Website
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <MapPin className="w-4 h-4 text-cyber-cyan" />
-                    <span>India</span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-cyber-cyan mb-4">Education</h3>
-                <div className="space-y-2">
-                  <p className="font-semibold">B.Tech CSE (AI & ML)</p>
-                  <p className="text-muted-foreground">Noida International University (2023–2027)</p>
-                  <p className="text-sm text-tech-light">
-                    Specializations: AI, ML, Network Security, Web Development
-                  </p>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Tech Stack */}
-        <section>
-          <h2 className="text-3xl font-bold text-cyber-cyan mb-8 text-center">Tech Stack</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Tech Stack - Compact Grid */}
+        <section className="print-section">
+          <h2 className="text-2xl font-bold text-cyber-cyan mb-4 text-center print:text-lg print:text-black print:text-left">Tech Stack</h2>
+          <div className="grid md:grid-cols-3 gap-4 print:grid-cols-2 print:gap-2">
             {Object.entries(skills).map(([category, techs]) => (
-              <Card key={category} className="bg-card border-tech-gray hover:border-cyber-cyan transition-all hover:shadow-tech">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-lg mb-4 capitalize text-primary">
-                    {category === 'analytics' ? 'ML/Analytics' : category}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {techs.map((tech) => (
-                      <Badge 
-                        key={tech} 
-                        variant="secondary" 
-                        className="bg-tech-gray text-foreground hover:bg-cyber-cyan hover:text-tech-dark transition-colors"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Projects */}
-        <section>
-          <h2 className="text-3xl font-bold text-cyber-cyan mb-8 text-center">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project, index) => (
-              <Card key={index} className="bg-card border-tech-gray hover:border-cyber-cyan transition-all hover:shadow-tech group">
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <project.icon className="w-8 h-8 text-cyber-cyan" />
-                    {project.github && (
-                      <a 
-                        href={project.github} 
-                        className="text-muted-foreground hover:text-cyber-cyan transition-colors"
-                      >
-                        <Github className="w-5 h-5" />
-                      </a>
-                    )}
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-cyber-cyan transition-colors">
-                    {project.title}
-                  </h3>
-                  <Badge variant="outline" className="mb-3 border-tech-blue text-tech-blue">
-                    {project.tech}
-                  </Badge>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Certifications */}
-        <section>
-          <h2 className="text-3xl font-bold text-cyber-cyan mb-8 text-center">Certifications</h2>
-          <Card className="bg-gradient-dark border-tech-gray">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-2 gap-4">
-                {certifications.map((cert, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <Award className="w-5 h-5 text-cyber-cyan" />
-                    <span>{cert}</span>
-                  </div>
-                ))}
+              <div key={category} className="bg-card border-tech-gray p-4 rounded-lg print:p-2 print-no-shadow print:border print:border-gray-300">
+                <h3 className="font-bold text-sm mb-2 capitalize text-primary print:text-black">
+                  {category === 'analytics' ? 'ML/Analytics' : category}
+                </h3>
+                <div className="flex flex-wrap gap-1">
+                  {techs.map((tech) => (
+                    <span 
+                      key={tech} 
+                      className="text-xs px-2 py-1 bg-tech-gray text-foreground rounded print:bg-gray-100 print:text-black print:border print:border-gray-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Skills Summary */}
-        <section>
-          <h2 className="text-3xl font-bold text-cyber-cyan mb-8 text-center">Core Skills</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              "Full Stack App Development",
-              "UI/UX Tailwind",
-              "Cybersecurity Dashboards", 
-              "Freelance Project Delivery",
-              "Real-time APIs",
-              "Resume/CV Builders (GPT/AI-based)",
-              "Mobile App Development"
-            ].map((skill) => (
-              <Badge 
-                key={skill} 
-                className="px-4 py-2 bg-primary hover:bg-primary/80 text-primary-foreground"
-              >
-                {skill}
-              </Badge>
             ))}
           </div>
         </section>
 
-        {/* CTA Footer */}
-        <div className="text-center bg-gradient-hero rounded-lg p-12">
+        {/* Projects - Compact Grid */}
+        <section className="print-section">
+          <h2 className="text-2xl font-bold text-cyber-cyan mb-4 text-center print:text-lg print:text-black print:text-left">Featured Projects</h2>
+          <div className="grid md:grid-cols-2 gap-4 print:gap-2">
+            {projects.map((project, index) => (
+              <div key={index} className="bg-card border-tech-gray p-4 rounded-lg print:p-2 print-no-shadow print:border print:border-gray-300">
+                <div className="flex items-start justify-between mb-2">
+                  <project.icon className="w-6 h-6 text-cyber-cyan print:w-4 print:h-4 print:text-black" />
+                  {project.github && (
+                    <a 
+                      href={project.github} 
+                      className="text-muted-foreground hover:text-cyber-cyan transition-colors print:text-black print:text-xs"
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
+                <h3 className="text-lg font-bold mb-1 print:text-sm">
+                  {project.title}
+                </h3>
+                <div className="text-xs px-2 py-1 bg-tech-blue/20 text-tech-blue rounded mb-2 inline-block print:bg-gray-100 print:text-black print:border">
+                  {project.tech}
+                </div>
+                <p className="text-muted-foreground text-sm print:text-xs print:text-black">{project.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Skills & Certifications - Two Column */}
+        <div className="grid md:grid-cols-2 gap-6 print:gap-4">
+          <section className="print-section">
+            <h2 className="text-2xl font-bold text-cyber-cyan mb-4 print:text-lg print:text-black">Core Skills</h2>
+            <div className="flex flex-wrap gap-2">
+              {[
+                "Full Stack Development",
+                "UI/UX Design",
+                "Cybersecurity Tools", 
+                "Real-time APIs",
+                "Mobile Development",
+                "AI/ML Integration"
+              ].map((skill) => (
+                <span 
+                  key={skill} 
+                  className="text-xs px-3 py-1 bg-primary text-primary-foreground rounded print:bg-gray-100 print:text-black print:border"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          <section className="print-section">
+            <h2 className="text-2xl font-bold text-cyber-cyan mb-4 print:text-lg print:text-black">Certifications</h2>
+            <div className="space-y-2">
+              {certifications.map((cert, index) => (
+                <div key={index} className="flex items-center gap-2 text-sm print:text-xs">
+                  <Award className="w-4 h-4 text-cyber-cyan print:w-3 print:h-3 print:text-black" />
+                  <span className="print:text-black">{cert}</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        {/* CTA Footer - Hidden in Print */}
+        <div className="text-center bg-gradient-hero rounded-lg p-8 print-hidden">
           <div className="relative">
             <div className="absolute inset-0 bg-tech-dark/80 rounded-lg"></div>
             <div className="relative">
-              <h2 className="text-3xl font-bold mb-4">Ready to Build Something Amazing?</h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                "Always shipping. Always building. Always leveling up."
+              <h2 className="text-2xl font-bold mb-3">Ready to Build Something Amazing?</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                &quot;Always shipping. Always building. Always leveling up.&quot;
               </p>
               <div className="flex justify-center gap-4">
                 <Button 
@@ -340,6 +305,11 @@ const Resume = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Print Footer */}
+        <div className="hidden print:block text-center text-sm border-t pt-2 mt-4">
+          <p>&quot;Always shipping. Always building. Always leveling up.&quot;</p>
         </div>
       </div>
     </div>
