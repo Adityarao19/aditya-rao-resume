@@ -113,7 +113,11 @@ const Resume = () => {
                   <Rocket className="w-4 h-4 mr-2" />
                   Let's Collaborate
                 </Button>
-                <Button variant="secondary" className="bg-tech-gray hover:bg-tech-gray/80">
+                <Button 
+                  variant="secondary" 
+                  className="bg-tech-gray hover:bg-tech-gray/80"
+                  onClick={() => window.print()}
+                >
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
                 </Button>
