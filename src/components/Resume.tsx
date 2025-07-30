@@ -40,13 +40,6 @@ const Resume = () => {
       icon: Brain
     },
     {
-      title: "GreenDestination Tourism Dashboard",
-      tech: "Power BI",
-      description: "An interactive tourism data storytelling dashboard using CSV-based insights.",
-      github: "https://github.com/Adityarao19",
-      icon: BarChart3
-    },
-    {
       title: "Personal Portfolio Website",
       tech: "React • Tailwind CSS",
       description: "Responsive developer portfolio featuring all projects, skills, and contact info.",
