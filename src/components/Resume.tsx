@@ -195,7 +195,7 @@ const Resume = () => {
           <h2 className="text-2xl font-bold text-cyber-cyan mb-4 text-center print:text-lg print:text-black print:text-left">Tech Stack</h2>
           <div className="grid md:grid-cols-3 gap-4 print:grid-cols-2 print:gap-2">
             {Object.entries(skills).map(([category, techs]) => (
-              <div key={category} className="bg-card border-tech-gray p-4 rounded-lg print:p-2 print-no-shadow print:border print:border-gray-300">
+              <div key={category} className="bg-card border border-tech-gray p-4 rounded-lg print:p-2 print-no-shadow print:border print:border-gray-300">
                 <h3 className="font-bold text-sm mb-2 capitalize text-primary print:text-black">
                   {category === 'analytics' ? 'ML/Analytics' : category}
                 </h3>
@@ -219,7 +219,7 @@ const Resume = () => {
           <h2 className="text-2xl font-bold text-cyber-cyan mb-4 text-center print:text-lg print:text-black print:text-left">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-4 print:gap-2">
             {projects.map((project, index) => (
-              <div key={index} className="bg-card border-tech-gray p-4 rounded-lg print:p-2 print-no-shadow print:border print:border-gray-300">
+              <div key={index} className="bg-card border border-tech-gray p-4 rounded-lg print:p-2 print-no-shadow print:border print:border-gray-300">
                 <div className="flex items-start justify-between mb-2">
                   <project.icon className="w-6 h-6 text-cyber-cyan print:w-4 print:h-4 print:text-black" />
                   {project.github && (
