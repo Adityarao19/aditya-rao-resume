@@ -1,73 +1,59 @@
-# Welcome to your Lovable project
+# 📄 Aditya Rao – Professional Resume
 
-## Project info
+Welcome to my official resume repository!  
+This repository contains my up-to-date resume in multiple formats for easy access and sharing with recruiters, clients, and collaborators.
 
-**URL**: https://lovable.dev/projects/8414c2ae-6b54-40a7-a737-d992ceadfac8
+---
 
-## How can I edit this code?
+## 👨‍💻 About Me
 
-There are several ways of editing your application.
+Hi, I'm **Aditya Rao**, a performance-oriented Full-Stack Developer and AI & ML enthusiast. I specialize in building secure, scalable web applications and intelligent systems for data analysis, threat detection, and automation.
 
-**Use Lovable**
+🔹 B.Tech CSE (AI & ML), Noida International University  
+🔹 Data Science Intern @ Unified Mentor  
+🔹 ISP 37 Intern @ Internshala  
+🔹 Interests: Cybersecurity, AI, Threat Intelligence, Full-Stack Projects  
+🔹 Portfolio: [adityaraoportfolio.vercel.app](https://adityaraoportfolio.vercel.app)  
+🔹 LinkedIn: [linkedin.com/in/aditya-rao-5a882434b](https://linkedin.com/in/aditya-rao-5a882434b)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/8414c2ae-6b54-40a7-a737-d992ceadfac8) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📌 Key Highlights
 
-**Use your preferred IDE**
+- ✔️ ATS-optimized resume  
+- ✔️ Tailored for Tech, Data Science, and Freelance roles  
+- ✔️ Updated regularly with latest experience and skills
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📥 Download My Resume
 
-Follow these steps:
+- **PDF Version (Preferred)**  
+  [Download PDF](https://github.com/Adityarao19/aditya-rao-resume/raw/main/Aditya_Rao_Resume.pdf)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Word Version**  
+  [Download DOCX](https://github.com/Adityarao19/aditya-rao-resume/raw/main/Aditya_Rao_Resume.docx)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📢 Let's Connect
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Feel free to reach out for opportunities, collaborations, or freelance projects.
 
-**Edit a file directly in GitHub**
+- 📧 Email: [adityarao1885@gmail.com](mailto:adityarao1885@gmail.com)  
+- 🧑‍💻 GitHub: [github.com/Adityarao19](https://github.com/Adityarao19)  
+- 📲 Telegram: [@adityarao19](https://t.me/adityarao19)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📌 Bonus Projects
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Check out some of my standout projects:
 
-## What technologies are used for this project?
+- 🔒 [Smart Log Anomaly Detector](https://github.com/Adityarao19/Smart-Log-Anomaly-Detector)  
+- 🧠 [Netflix Visual Insights](https://github.com/Adityarao19/Netflix-Visual-Insights)  
+- 🧬 [Drugs Effectiveness Analysis](https://github.com/Adityarao19/Drugs-Effectiveness-and-Safety)
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/8414c2ae-6b54-40a7-a737-d992ceadfac8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+> ⚡ *This repository ensures you always have access to the latest version of my resume. Feel free to fork, star, or share!*
