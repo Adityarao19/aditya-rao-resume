@@ -26,11 +26,12 @@ const ThemeToggle = () => {
       size="icon"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="w-10 h-10 border border-tech-gray hover:border-cyber-cyan transition-colors"
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
     >
       {theme === "dark" ? (
-        <Sun className="h-5 w-5 text-cyber-cyan" />
+        <Sun className="h-5 w-5 text-cyber-cyan transition-all" />
       ) : (
-        <Moon className="h-5 w-5 text-tech-blue" />
+        <Moon className="h-5 w-5 text-tech-blue transition-all" />
       )}
     </Button>
   );
