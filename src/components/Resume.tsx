@@ -33,13 +33,6 @@ const Resume = () => {
 
   const projects = [
     {
-      title: "Live Network Monitor Dashboard",
-      tech: "Flask • Scapy • JavaScript",
-      description: "A real-time packet monitoring system with live alerts and CSV export functionality.",
-      github: "https://github.com/Adityarao19",
-      icon: Shield
-    },
-    {
       title: "SpamGuard AI",
       tech: "React • TypeScript • Python ML",
       description: "Stylish and intuitive frontend for spam detection, backed by a simulated ML engine.",
