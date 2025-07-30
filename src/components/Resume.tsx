@@ -18,7 +18,9 @@ import {
   Rocket,
   Zap,
   Globe,
-  BarChart3
+  BarChart3,
+  Bot,
+  ShieldCheck
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
@@ -32,6 +34,20 @@ const Resume = () => {
   };
 
   const projects = [
+    {
+      title: "PhishNet – Real-Time Phishing URL Detector",
+      tech: "Python • Flask • Scikit-learn • HTML/CSS",
+      description: "Detects and flags phishing websites in real-time using a trained ML model. Users can input URLs and instantly get a safety verdict.",
+      github: "https://phishnet-eight.vercel.app",
+      icon: ShieldCheck
+    },
+    {
+      title: "PathFinder AI Guide",
+      tech: "React • Tailwind CSS • OpenAI API",
+      description: "An AI-powered career counselor that helps students discover tech career paths based on their interests and goals.",
+      github: "https://pathfinder-ai-guide-05.vercel.app",
+      icon: Bot
+    },
     {
       title: "SpamGuard AI",
       tech: "React • TypeScript • Python ML",
