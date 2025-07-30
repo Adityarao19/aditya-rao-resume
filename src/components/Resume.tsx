@@ -16,63 +16,68 @@ import {
   TrendingUp,
   Award,
   Rocket,
-  Zap
+  Zap,
+  Globe,
+  BarChart3
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const Resume = () => {
   const skills = {
-    frontend: ["React", "Next.js", "Tailwind", "TypeScript", "HTML", "CSS"],
-    backend: ["Flask", "Express", "Python", "REST APIs"],
+    frontend: ["React", "Next.js", "Tailwind CSS", "TypeScript", "HTML", "CSS"],
+    backend: ["Python", "Flask", "Express.js", "REST APIs"],
     mobile: ["Flutter", "React Native"],
-    tools: ["Vercel", "Firebase", "PythonAnywhere", "Git"],
-    analytics: ["Pandas", "NumPy", "Scikit-learn", "Power BI"]
+    tools: ["Git", "Firebase", "PythonAnywhere", "Vercel"],
+    analytics: ["Power BI", "Pandas", "NumPy", "Scikit-learn"]
   };
 
   const projects = [
     {
       title: "Live Network Monitor Dashboard",
-      tech: "Flask + Scapy + JS",
-      description: "Real-time packet monitoring tool with CSV logging and alerts.",
-      github: "https://github.com/Adityarao19/live-network-monitor",
+      tech: "Flask • Scapy • JavaScript",
+      description: "A real-time packet monitoring system with live alerts and CSV export functionality.",
+      github: "https://github.com/Adityarao19",
       icon: Shield
     },
     {
       title: "SpamGuard AI",
-      tech: "React + TypeScript + Python ML",
-      description: "Stylish spam detection frontend with a simulated AI backend.",
-      github: "https://github.com/Adityarao19/ai-spam-detection",
+      tech: "React • TypeScript • Python ML",
+      description: "Stylish and intuitive frontend for spam detection, backed by a simulated ML engine.",
+      github: "https://github.com/Adityarao19",
       icon: Brain
     },
     {
       title: "GreenDestination Tourism Dashboard",
       tech: "Power BI",
-      description: "Interactive data storytelling using tourism CSV dataset.",
-      icon: TrendingUp
+      description: "An interactive tourism data storytelling dashboard using CSV-based insights.",
+      github: "https://github.com/Adityarao19",
+      icon: BarChart3
     },
     {
       title: "Personal Portfolio Website",
-      tech: "React + Tailwind",
-      description: "A clean, fast, mobile-friendly showcase of all skills.",
+      tech: "React • Tailwind CSS",
+      description: "Responsive developer portfolio featuring all projects, skills, and contact info.",
       github: "https://adityaraoportfolio.vercel.app",
-      icon: Code2
+      icon: Globe
     }
   ];
 
   const certifications = [
     "Power BI – Unified Mentor",
-    "Python for Data Science – NPTEL",
+    "Python for Data Science – NPTEL", 
     "Web Development Bootcamp – Udemy",
-    "Internship – Unified Mentor (Data Science)"
+    "Data Science Internship – Unified Mentor",
+    "Generative AI – Databricks",
+    "RHCSA – Cywer Learning"
   ];
 
   const expertiseAreas = [
-    { icon: Code2, title: "Full Stack App Development" },
-    { icon: Smartphone, title: "Mobile App Development" },
-    { icon: Shield, title: "Cybersecurity Dashboards" },
-    { icon: Database, title: "Real-time APIs" },
-    { icon: Brain, title: "AI/ML Integration" },
-    { icon: Zap, title: "Freelance Project Delivery" }
+    { icon: Code2, title: "Full Stack Web Development" },
+    { icon: Smartphone, title: "Mobile App Development (Flutter, React Native)" },
+    { icon: Database, title: "Real-time API Integrations" },
+    { icon: Brain, title: "AI/ML Integration in Web Apps" },
+    { icon: Shield, title: "Cybersecurity & Monitoring Tools" },
+    { icon: Zap, title: "UI/UX Design" }
   ];
 
   return (
@@ -103,9 +108,9 @@ const Resume = () => {
               </div>
               
               <p className="text-base text-muted-foreground mb-6 leading-relaxed print:text-sm print:mb-3 print-keep-colors">
-                Creative and performance-oriented freelance developer with expertise in building 
-                custom full stack web apps, dashboards, and secure backend systems. Currently 
-                learning Flutter and React Native to expand into app development.
+                Creative and performance-driven freelance developer specializing in full stack web development, 
+                data dashboards, and secure backend systems. Passionate about building scalable apps with 
+                real-world AI/ML integration. Currently expanding into mobile app development using Flutter and React Native.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-6 print-hidden">
@@ -150,11 +155,11 @@ const Resume = () => {
                   GitHub
                 </a>
                 <a 
-                  href="https://t.me/AdityaRao" 
+                  href="https://t.me/adityarao19" 
                   className="flex items-center gap-2 text-muted-foreground hover:text-cyber-cyan transition-colors print:text-black"
                 >
                   <MessageCircle className="w-3 h-3" />
-                  Telegram
+                  Aditya Rao
                 </a>
               </div>
             </div>
@@ -242,12 +247,12 @@ const Resume = () => {
             <h2 className="text-2xl font-bold text-cyber-cyan mb-4 print:text-lg print:text-black">Core Skills</h2>
             <div className="flex flex-wrap gap-2">
               {[
-                "Full Stack Development",
+                "Full Stack Web Development",
+                "Mobile App Development (Flutter, React Native)",
+                "Real-time API Integrations", 
                 "UI/UX Design",
-                "Cybersecurity Tools", 
-                "Real-time APIs",
-                "Mobile Development",
-                "AI/ML Integration"
+                "AI/ML Integration in Web Apps",
+                "Cybersecurity & Monitoring Tools"
               ].map((skill) => (
                 <span 
                   key={skill} 
